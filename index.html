@@ -1,0 +1,17 @@
+Question 1
+def dot_product(v1, v2):
+ps = 0
+for i in range(len(v1)):
+for j in range(len(v2)):
+ps += v1[i] * v2[j]
+return ps
+
+def are_vectors_orthogonal(vectors):
+for v1, v2 in vectors:
+dot_product_result = dot_product(v1, v2)
+if dot_product_result == 0:
+print("The vectors are orthogonal.")
+else:
+print("The vectors are not orthogonal.")
+
+Question 2
